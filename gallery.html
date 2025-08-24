@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Gallery Section ===== -->
+  <section>
+    <h1>My Hobbies Gallery</h1>
+    <div class="gallery">
+      <figure>
+        <img src="reading.jpg" alt="Reading Novels" onclick="enlargeImage(this)">
+        <figcaption>Reading novels expands my imagination and knowledge.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="music.jpg" alt="Listening to Music" onclick="enlargeImage(this)">
+        <figcaption>Music inspires and motivates me every day.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="gaming.jpg" alt="Playing Handball" onclick="enlargeImage(this)">
+        <figcaption>Handball keeps me active, strong, and teaches teamwork.</figcaption>
+      </figure>
+
+      <figure>
+        <img src="coding.jpg" alt="Coding Projects" onclick="enlargeImage(this)">
+        <figcaption>Coding allows me to create projects and explore technology.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Image Modal (Popup) ===== -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 My Website</p>
+  </footer>
+</body>
+</html>

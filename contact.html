@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>You can reach me directly through the form below or connect with me on my social media.</p>
+
+    <!-- Contact Form -->
+    <form id="contactForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Or reach me at:</h2>
+      <p>Email: <a href="mailto:atshoota357@gmail.com">atshonota357@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/atshoallunamda.nota" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.linkedin.com/in/nota-atsho-3862aa323" target="_blank">LinkedIn</a> |
+        <a href="https://www.instagram.com/atshonota?igsh=cG90Zmk2d2h6YjNr" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 My Website</p>
+  </footer>
+</body>
+</html>
